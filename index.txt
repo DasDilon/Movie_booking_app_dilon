@@ -1,0 +1,70 @@
+1. You will be building a Movie Booking application using HTML, CSS, and JavaScript. (Read More)
+2. Project Guidelines: This would help you get a direction in terms of what all dimensions should be covered in your project.
+3. List of Features to be made:
+
+Adding Movies List
+
+Filter Movie by Genres
+
+Adding Search Functionality
+
+Show Movie Description
+
+Add Checkout Page
+
+### Project Context
+
+- Movies are basically a source of entertainment through which people relax, get some knowledge, or learn something for themselves, or sometimes watching a movie is for pure enjoyment. With so many genres to browse through and filter according to our favorite genres, we are making the user experience less time-consuming.
+- Through this project, we’ll explore a way to build our movie-booking app using the Movie Database (TMDB) API.
+    
+    (https://developers.themoviedb.org/3/getting-started/introduction)
+
+
+Tech Stack Prerequisite: HTML, CSS, JavaScript
+
+### Project Steps
+
+- **Step 1**: Generate your own API key
+    - Create an account at https://www.themoviedb.org/ and generate your API key which you’ll be using in the project.
+    - To generate the API key: go to **profile** → **settings** → **API**
+- **Step 2**: Nav bar
+    - The website should have a `navigation` section.
+    - The `nav bar` should have `the logo or the text` of your website, which should point toward the home page of your website.
+    - The nav bar should also have a `search bar`, which on entering the input text should load the movies which match the input text.
+
+- **Step 3**: Adding Movies (Now Playing)
+    - For populating the application with movies, we’ll be using the movies DB and specifically this API: https://developers.themoviedb.org/3/movies/get-now-playing
+    - We’ll create a `movie card` for each movie with the `name of the movie`, an `image of the movie`, the `language`, and the `ratings`.
+- **Step 4**: Adding Genre List
+    - For populating the genres section, use: https://developers.themoviedb.org/3/genres/get-movie-list
+    - With this section added, we’ll be adding the `filtering functionality according to the genre selected`, and show only those movies whose `genre_ids include the genre’s id`.
+
+- **Step 5**: Adding Search Functionality
+    - To develop this functionality, use: https://developers.themoviedb.org/3/search/search-movies
+    - Make sure only those movies are loaded whose name matches the input text.
+    - To make the search functionality of advance level, create a `debounce` function. The debounce() function `forces a function to wait a certain amount of time before hitting the API again`, rather than hitting the API on every character input.
+- **Step 6**: Show Movie Description
+    - Every `movie card` should have a `click event`, which shows the movie's description.
+    - When the user clicks on any movie card, a pop-up of that movie with `movie’s title`, `rating`, `language`, `duration(**runtime**)`, `genre`, `overview`, `price`, and a `button` should be visible to the user.
+    
+    *As this API doesn’t have the price option, you can use **`runtime***2` as pricing or `Math.random()` to generate a random price between 250-300.*
+
+
+see: indexHTML-popup
+
+- **Step 7**: Checkout Page
+    - The `Book Tickets` button should take the user to the `checkout page`.
+    - It should contain a `summary section` and a `payment section`.
+    - Within the `summary section`, `name of the movie`, `cost of a ticket`, `input for number of tickets`, `convenience fee`, and `subtotal` should be present.
+    - Inside the `payment section`, a form with `first name`, `last name`, `email`, and `different payment methods` should be present.
+    
+    *Convenience Fee should be 1.75% of (number of tickets * price of 1 ticket).*
+
+see: checkoutHTML-spec.png
+
+### Project Checkpoints
+
+- Generate your own API key, Nav bar, and Adding Movies (Now Playing)
+- Adding Genre List, Adding Search Functionality
+- Show Movie Description, Checkout Page
+
